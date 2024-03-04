@@ -55,7 +55,7 @@ public class Java20240229 {
         } else if (num % 2 == 0) {
             System.out.println("num은 짝수");
         }
-
+        // 아래와 같이 사용
         // 독립적인 if문으로 만드는 것이 좋다.
         if (num > 0) {
             System.out.println("num은 양수");
@@ -91,7 +91,7 @@ public class Java20240229 {
         }
 
 
-        
+
 
 
     }
