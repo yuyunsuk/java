@@ -108,14 +108,30 @@ public class Java20240305Array {
         System.out.println();
 
         System.out.println("Test1 Label 쓰고 전체 탈출");
-        POS1:
-        for (int i1=0; i1<10; i1++) {
+        POS1: for (int i1=0; i1<10; i1++) {
             for(int j=0; j<5; j++) {
                 if (i1==3 && j==2) {
                     break POS1;
                 }
                 System.out.println(i1 + ", " + j);
             }
+        }
+
+        int score = 72;
+
+        switch (score / 10) {
+            case 10:
+            case 9:
+                System.out.println("A학점");
+                break;
+            case 8:
+                System.out.println("B학점");
+                break;
+            case 7:
+                System.out.println("C학점");
+                break;
+            default:
+                System.out.println("F학점");
         }
 
 
