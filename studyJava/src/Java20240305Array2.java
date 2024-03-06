@@ -87,7 +87,7 @@ public class Java20240305Array2 {
         // 리터럴로 입력되는 값은 런타임 이전에 이미 메모리에 만들어짐
 
         // 문자열의 '+' 연산
-        String a1 = "Hellow";
+        String a1 = "Hello";
         String a2 = "World";
         System.out.println(a1 + " " + a2);
 
