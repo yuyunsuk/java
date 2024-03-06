@@ -134,7 +134,7 @@ public class Java20240305Array2 {
         int age;
 
         name = str.substring(str.indexOf("[")+1, str.indexOf("]"));
-        age = Integer.valueOf(str.substring(str.lastIndexOf("[")+1, str.lastIndexOf("]")));
+        age = Integer.parseInt(str.substring(str.lastIndexOf("[")+1, str.lastIndexOf("]")));
 
         System.out.println(name);
         System.out.println(age);
