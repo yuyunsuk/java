@@ -132,9 +132,9 @@ public class Java240307 {
 //        for (int i=0; i<rottoList.length; i++) {
 //            int temp = randClass.nextInt(6)+1;
 //            for (int j=0; j<i; j++) {
-//                if (rottoList[j] == temp) {
-//                    temp = randClass.nextInt(6)+1;
-//                    j = -1; // 증감 조건으로 가기 때문에 j를 0으로 만들기 위해서.
+//                if (rottoList[j] == temp) { // 위의 새로운 것과 같으면
+//                    temp = randClass.nextInt(6)+1; // 위의 새로운 것과 같으면 다시 새로운 숫자 추출
+//                    j = -1; // 증감 조건으로 가기 때문에 j를 0으로 만들고 다시 처음부터 체크
 //                }
 //            }
 //            rottoList[i] = temp;
