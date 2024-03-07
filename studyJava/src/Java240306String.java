@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Java20240306String {
+public class Java240306String {
     public static void main(String[] args) {
         // 문자열 길이
         String str1 = "Hello Java!";

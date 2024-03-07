@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class Java20240306String2 {
+public class Java240306String2 {
     public static void main(String[] args) {
         String str1 = "Java Study";
         // Study 를 못찾으면 변경하지 않고 원본 그대로 둠

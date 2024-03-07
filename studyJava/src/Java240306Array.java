@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Java20240306Array {
+public class Java240306Array {
     public static void main(String[] args) {
         // 1. 길이가 10인 배열에 1부터 10까지 값을 입력
         int[] intList1 = new int[10];
@@ -117,7 +117,7 @@ public class Java20240306Array {
         }
 
         if (bCheck == false) {
-            System.out.println("화원가입해주세요");
+            System.out.println("회원가입해주세요");
         }
 
 //        for (int i=0; i< members.length; i++) {
@@ -126,9 +126,21 @@ public class Java20240306Array {
 //                bCheck = true;
 //                break;
 //            }
-//            if (i == members.length - 1) {
-//                System.out.println("화원가입해주세요");
+//            if (i == members.length - 1) { // i == 5, for문 안에 존재
+//                System.out.println("회원가입해주세요");
 //            }
+//        }
+
+//        int k = 0;
+//        for ( ; k< members.length; k++) {
+//            if (inputName.equalsIgnoreCase(members[k])) {
+//                System.out.println(inputName.concat("님 환영합니다."));
+//                bCheck = true;
+//                break;
+//            }
+//        }
+//        if (k == members.length) { // k == 6, for문 밖에 존재
+//            System.out.println("회원가입해주세요");
 //        }
 
 

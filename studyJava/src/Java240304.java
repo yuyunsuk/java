@@ -1,4 +1,4 @@
-public class Java20240304 {
+public class Java240304 {
     public static void main(String[] args) {
         // for 반복문의 기본형
         //for (초기식; 조건식; 증감식) {
