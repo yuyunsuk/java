@@ -65,7 +65,7 @@ public class Java240307 {
 //        System.out.println(Arrays.toString(charText));
 //
 //        for (int i=0; i<inputText.length(); i++) {
-//            charChangeText[i] = charText[inputText.length()-i-1];
+//            charChangeText[i] = charText[inputText.length()-i-1]; // 4~0 까지 배열로 입력하기 위하여
 //            //System.out.println(inputStr.length()-i-1);
 //        }
 //        System.out.println(Arrays.toString(charChangeText));
@@ -133,11 +133,25 @@ public class Java240307 {
 //            int temp = randClass.nextInt(6)+1;
 //            for (int j=0; j<i; j++) {
 //                if (rottoList[j] == temp) { // 위의 새로운 것과 같으면
-//                    temp = randClass.nextInt(6)+1; // 위의 새로운 것과 같으면 다시 새로운 숫자 추출
+//                    temp = randClass.nextInt(6)+1; // 위의 새로운 것과 같으면 다시 새로운 숫자 추출 입력
 //                    j = -1; // 증감 조건으로 가기 때문에 j를 0으로 만들고 다시 처음부터 체크
 //                }
 //            }
 //            rottoList[i] = temp;
+//        }
+//        System.out.println(Arrays.toString(rottoList));
+
+//        // [선생님 코드2]
+//        Random randClass = new Random();
+//        int[] rottoList = new int[6];
+//
+//        for (int i=0; i<rottoList.length; i++) {
+//            rottoList[i] = randClass.nextInt(6)+1;
+//            for (int j=0; j<i; j++) {
+//                if (rottoList[j] == rottoList[i]) {
+//                    i--; // 새로운 값과 기존값 중 같은것이 있으면 i를 진행시키지 못하도록 다시 뒤로 돌림.(같은 회차를 계속 반복)
+//                }
+//            }
 //        }
 //        System.out.println(Arrays.toString(rottoList));
 
@@ -149,7 +163,8 @@ public class Java240307 {
             rottoList[i] = randClass.nextInt(6)+1;
             for (int j=0; j<i; j++) {
                 if (rottoList[j] == rottoList[i]) {
-                    i--; // 새로운 값과 기존값 중 같은것이 있으면 i를 진행시키지 못하도록 다시 뒤로 돌림.
+                    i--; // 새로운 값과 기존값 중 같은것이 있으면 i를 진행시키지 못하도록 다시 뒤로 돌림.(같은 회차를 계속 반복)
+                    break; // 추가하면 좋을거 같음.
                 }
             }
         }
