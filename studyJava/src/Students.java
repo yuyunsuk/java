@@ -17,6 +17,12 @@ public class Students {
         this.personalNum = personalNum;
     }
 
+    public Students(String name, int age, String address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+
     // Getter : 읽어오는 역할, 반드시 리턴(호출한 사람에게 주는 것)이 있음, 괄호가 비어있는 이유는 이미 있는 자료를 읽어 리턴
     // Setter : 저장하는 역할, 괄호에는 바꿔야할 값을 받아야 함, 매개변수(parameter)
     public String getName() { // String 으로 리턴
