@@ -27,13 +27,13 @@ public class Java240315Test3 {
         System.out.println("자음의 갯수는 "+(cnt2-cnt1)+"개");
         System.out.println();
 
-//        // [선생님 코드]
-//        int vCount = 0, cCount = 0;
-//        str = str.toLowerCase();
-//        for (int i=0; i<str.length(); i++) {
-//            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') cCount++;
-//            if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') vCount++;
-//        }
+        // [선생님 코드]
+        int vCount = 0, cCount = 0;
+        str = str.toLowerCase();
+        for (int i=0; i<str.length(); i++) {
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' || str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') cCount++;
+            if (str.charAt(i) >= 'a' && str.charAt(i) <= 'z') vCount++;
+        }
 
         System.out.println("모음의 갯수는 "+cCount+"개"); // 10개
         System.out.println("자음의 갯수는 "+(vCount-cCount)+"개"); // 27-10개
