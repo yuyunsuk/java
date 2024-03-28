@@ -2,6 +2,7 @@ package Java240327;
 
 public class BinarySearchExample {
 
+    // 바이너리 서치는 기본적으로 순서대로 정렬되어 있어야 함
     public static void binarySearch(int arr[], int first, int last, int key){ // arr 배열과, 처음, 끝, key 값을 입력받음
         int mid = (first + last)/2; // mid 에 중간값 저장 (0+4)/2 => 2
         while( first <= last ){ // while (0 <= 4) 동안 반복
