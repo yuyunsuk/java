@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public class User {
     String userId; // User ID
-    private String passWord; // User 비밀번호
+    private String password; // User 비밀번호
     LocalDate birthDate; // 생일
     private String userGrade; // User 등급 (강의수강자, 강의자, 관리자)
     String userName; // User 이름
@@ -92,11 +92,11 @@ public class User {
     }
 
     public String getPassWord() {
-        return passWord;
+        return password;
     }
 
     public void setPassWord(String passWord) {
-        this.passWord = passWord;
+        this.password = passWord;
     }
 
     public String getUserGrade() {

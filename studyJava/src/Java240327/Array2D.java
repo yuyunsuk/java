@@ -49,6 +49,14 @@ public class Array2D {
         int[][] a5 = new int[2][];
         a5[0] = new int[]{1,2};
         a5[1] = new int[]{3,4,5};
+
+        //a5[0] = new int[2];
+        //a5[1] = new int[3];
+
+        //int[][] a5 = new int[][]{{1,2},{3,4,5}};
+
+        //int[][] a5 = {{1,2},{3,4,5}};
+
         System.out.println(a5.length);
         System.out.println(a5[0].length);
         System.out.println(a5[1].length);
