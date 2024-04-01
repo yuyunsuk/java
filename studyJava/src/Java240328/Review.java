@@ -2,11 +2,11 @@ package Java240328;
 
 public class Review {
     // 1~10점까지 점수와 간단한 텍스트로 리뷰를 남김
-    String reviewID;
-    String loginID; //userID
-    String lectureID; // 강의 아이디
-    int reviewRating;
-    String reviewText;
+    private String reviewID;
+    private String loginID; //userID
+    private String lectureID; // 강의 아이디
+    private int reviewRating; // 1 ~ 10점
+    private String reviewText; // 리뷰평
     public Review() {
     }
 
@@ -92,6 +92,7 @@ public class Review {
         for (int i=0; i<Main.ltRecordArrayList.size(); i++) {
             if (Main.ltRecordArrayList.get(i).getUserId().equals(userID) && Main.ltRecordArrayList.get(i).getLtID().equals(lectureID)) {
                 checkLT = true;
+                break;
             }
         }
         //System.out.println("User 강의 수강 체크: [" + checkLT + "]");
@@ -106,6 +107,14 @@ public class Review {
                 checkReview = false;
             }
         }
+
+//        for (Review review : Main.ltReviewArrayList) { // for each 구분
+//            if (review.getLoginID().equals(userID) && review.getLectureID().equals(lectureID)) {
+//                checkLT = true;
+//                break;
+//            }
+//        }
+
         System.out.println("[Review] 기존에 Review 데이터가 있는지 체크: [" + checkReview + "]");
 
         // 점수 범위 Check

@@ -9,7 +9,6 @@ public class InfoCreate {
         Main.userArrayList = new ArrayList<>();
         Main.ltArrayList = new ArrayList<>();
         Main.ltRecordArrayList = new ArrayList<>();
-        Main.ltReviewArrayList = new ArrayList<>();
 
         // 1번 (유저, 강의, 수강관리 클래스 생성 -> ArrayList 담기)
 
@@ -86,56 +85,6 @@ public class InfoCreate {
         System.out.println(lth9.toString());
         System.out.println();
         System.out.println();
-
-        System.out.println("Review 관리 체크 시작!!!===========================================================");
-
-        String strReviewID1     = "R240329001"; // ReviewID
-        String strReviewLogin1  = "24030001"; // 24030001 ~ 24030005
-        String strReviewLTID1   = "LT24030001"; // LT24030001 ~ LT24030003
-        int    strReviewRating1 = 10; // 1 ~ 10
-        String strReviewText1   = "좋은 강의였어요."; // "좋은 강의였어요."
-
-        String strReviewID2     = "R240329002"; // ReviewID
-        String strReviewLogin2  = "24030001"; // 24030001 ~ 24030005
-        String strReviewLTID2   = "LT24030001"; // LT24030001 ~ LT24030003
-        int    strReviewRating2 = 10; // 1 ~ 10
-        String strReviewText2   = "좋은 강의였어요."; // "좋은 강의였어요."
-
-        Review rev1 = new Review(strReviewID1,strReviewLogin1,strReviewLTID1,strReviewRating1,strReviewText1);
-        Review rev2 = new Review(strReviewID2,strReviewLogin2,strReviewLTID2,strReviewRating2,strReviewText2);
-        System.out.println(rev1.toString());
-        System.out.println(rev2.toString());
-        System.out.println();
-
-        // Review Class Test
-        boolean checkData;
-
-        checkData = false;
-        checkData = rev1.createReview(strReviewLogin1, strReviewLTID1, strReviewRating1, strReviewText1);
-        System.out.println("[InforCreate] rev1 의 결과는: "+checkData);
-        if (checkData == true) {
-            Main.ltReviewArrayList.add(rev1);
-        }
-        System.out.println("[InforCreate] "+Main.ltReviewArrayList.toString());
-
-        checkData = false;
-        checkData = rev2.createReview(strReviewLogin2, strReviewLTID2, strReviewRating2, strReviewText2);
-        System.out.println("[InforCreate] rev2 의 결과는: "+checkData);
-        if (checkData == true) {
-            Main.ltReviewArrayList.add(rev2);
-        }
-
-        System.out.println(Main.ltReviewArrayList.toString());
-        System.out.println("Review 관리 체크 종료!!!=======================================================");
-
-//        System.out.println(Main.userArrayList.toString());     // 유저 ArrayList
-//        System.out.println(Main.ltArrayList.toString());       // 강의 ArrayList
-//        System.out.println(Main.ltRecordArrayList.toString()); // 강의관리 ArrayList
-//        System.out.println(Main.ltReviewArrayList.toString()); // 강의 Review ArrayList
-        System.out.println();
-
-        // Main.ltReviewArrayList
-
 
 
 
