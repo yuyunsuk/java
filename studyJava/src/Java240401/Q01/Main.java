@@ -39,5 +39,7 @@ public class Main {
         B b_out = mg2.get();
         System.out.println(b_out);
 
+
+
     }
 }

@@ -7,6 +7,8 @@ public class InfoCreate {
     public static void createInfors() {
 
         Main.userArrayList = new ArrayList<>();
+        Main.teacherArrayList = new ArrayList<>();
+        Main.ltTeacherArrayList = new ArrayList<>();
         Main.ltArrayList = new ArrayList<>();
         Main.ltRecordArrayList = new ArrayList<>();
 
@@ -29,7 +31,43 @@ public class InfoCreate {
         System.out.println(user5.toString());
         System.out.println();
 
+        Teacher teacher1 = new Teacher("T2403001", "Teacher1", "010-1234-6678", "teacher1@naver.com", "대전 중구 중앙로 221번길 20", "남성", 24, LocalDate.of(1972,10,1));
+        Teacher teacher2 = new Teacher("T2403002", "Teacher2", "010-2234-6678", "teacher2@naver.com", "대전 중구 중앙로 222번길 20", "여성", 25, LocalDate.of(1972,10,2));
+        Teacher teacher3 = new Teacher("T2403003", "Teacher3", "010-3234-6678", "teacher3@naver.com", "대전 중구 중앙로 223번길 20", "남성", 26, LocalDate.of(1972,10,3));
+        Teacher teacher4 = new Teacher("T2403004", "Teacher4", "010-4234-6678", "teacher4@naver.com", "대전 중구 중앙로 224번길 20", "여성", 27, LocalDate.of(1972,10,4));
+        Teacher teacher5 = new Teacher("T2403005", "Teacher5", "010-5234-6678", "teacher5@naver.com", "대전 중구 중앙로 225번길 20", "남성", 28, LocalDate.of(1972,10,5));
+        Main.teacherArrayList.add(teacher1);
+        Main.teacherArrayList.add(teacher2);
+        Main.teacherArrayList.add(teacher3);
+        Main.teacherArrayList.add(teacher4);
+        Main.teacherArrayList.add(teacher5);
+        System.out.println(teacher1.toString());
+        System.out.println(teacher2.toString());
+        System.out.println(teacher3.toString());
+        System.out.println(teacher4.toString());
+        System.out.println(teacher5.toString());
+        System.out.println();
 
+        LectureTeacher ltTeacher1 = new LectureTeacher("T2403001", "LT24030001");
+        LectureTeacher ltTeacher2 = new LectureTeacher("T2403002", "LT24030002");
+        LectureTeacher ltTeacher3 = new LectureTeacher("T2403003", "LT24030001");
+        LectureTeacher ltTeacher4 = new LectureTeacher("T2403004", "LT24030002");
+        LectureTeacher ltTeacher5 = new LectureTeacher("T2403005", "LT24030003");
+        LectureTeacher ltTeacher6 = new LectureTeacher("T2403001", "LT24030003");
+        Main.ltTeacherArrayList.add(ltTeacher1);
+        Main.ltTeacherArrayList.add(ltTeacher2);
+        Main.ltTeacherArrayList.add(ltTeacher3);
+        Main.ltTeacherArrayList.add(ltTeacher4);
+        Main.ltTeacherArrayList.add(ltTeacher5);
+        Main.ltTeacherArrayList.add(ltTeacher6);
+        System.out.println(ltTeacher1.toString());
+        System.out.println(ltTeacher2.toString());
+        System.out.println(ltTeacher3.toString());
+        System.out.println(ltTeacher4.toString());
+        System.out.println(ltTeacher5.toString());
+        System.out.println(ltTeacher6.toString());
+        System.out.println();
+        
         Lecture lt1 = new Lecture("LT24030001","JAVA교육자료01",LTCategory.PROGRAMING,LTGrade.EASY,"동영상",100);
         Lecture lt2 = new Lecture("LT24030002","파이썬교육자료01",LTCategory.PROGRAMING,LTGrade.MIDDLE,"동영상",40);
         Lecture lt3 = new Lecture("LT24030003","C#교육자료01",LTCategory.PROGRAMING,LTGrade.MIDDLE,"동영상",60);
@@ -40,7 +78,6 @@ public class InfoCreate {
         System.out.println(lt2.toString());
         System.out.println(lt3.toString());
         System.out.println();
-
 
         LectureRecord ltr1 = new LectureRecord("24030001","LT24030001");
         LectureRecord ltr2 = new LectureRecord("24030001","LT24030002");
