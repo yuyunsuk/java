@@ -138,9 +138,9 @@ class LMSSearch {
         return lectureTitle;
     }
 
-    public boolean replaceFreeBoard(String freeBoardID, List<Reply>) {
+    public boolean replaceFreeBoard(String freeBoardID, List<Reply> replies) {
         boolean checkData = false;
-        
+
 
         return checkData;
     }
