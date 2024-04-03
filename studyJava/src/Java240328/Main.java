@@ -301,8 +301,7 @@ public class Main {
                 freeBoardContent = Main.freeboardArrayList.get(i).getFreeBoardContent();
                 loginId = Main.freeboardArrayList.get(i).getLoginId();
 
-                Main.freeboardArrayList.remove(i);
-                Main.freeboardArrayList.add(new FreeBoard(freeBoardId,freeBoardTitle,freeBoardContent,loginId,replies1));
+                Main.freeboardArrayList.set(i, new FreeBoard(freeBoardId,freeBoardTitle,freeBoardContent,loginId,replies1));
             }
         }
 
