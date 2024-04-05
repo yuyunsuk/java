@@ -60,6 +60,10 @@ public class FreeBoard {
         this.replies = replies;
     }
 
+    public void setReplies(Reply reply) {
+        replies.add(reply);
+    } // FreeBoard 의 setReplies (세터)의 오버로딩, List add 로 사용
+
     @Override
     public String toString() {
         return "FreeBoard{" +

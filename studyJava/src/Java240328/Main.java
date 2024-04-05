@@ -106,7 +106,7 @@ class LMSSearch {
                 for (int j=0; j<Main.teacherArrayList.size(); j++) {
                     if (Main.teacherArrayList.get(j).getteacherId().equals(teacherId)) {
                         teacherName = teacherName + Main.teacherArrayList.get(j).getteacherName() + " ";
-                        break; // 선생님 이름은 1개
+                        break; // 선생님 ID의 이름은 1개
                     }
                 }
             }
@@ -140,7 +140,6 @@ class LMSSearch {
 
     public boolean replaceFreeBoard(String freeBoardID, List<Reply> replies) {
         boolean checkData = false;
-
 
         return checkData;
     }

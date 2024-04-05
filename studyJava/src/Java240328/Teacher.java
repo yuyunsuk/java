@@ -3,16 +3,16 @@ package Java240328;
 import java.time.LocalDate;
 
 public class Teacher {
-    String teacherId; // teacher ID
+    private String teacherId; // teacher ID
     private String password; // teacher 비밀번호
-    LocalDate birthDate; // 생일
+    private LocalDate birthDate; // 생일
     private String teacherGrade; // teacher 등급 (강의수강자, 강의자, 관리자)
-    String teacherName; // teacher 이름
-    String teacherTel; // teacher 전화
-    String teacherEmail; // teacher 이메일
-    String teacherAddress; // teacher 주소
-    String teacherGender; // teacher 성별
-    int teacherAge; // teacher 나이
+    private String teacherName; // teacher 이름
+    private String teacherTel; // teacher 전화
+    private String teacherEmail; // teacher 이메일
+    private String teacherAddress; // teacher 주소
+    private String teacherGender; // teacher 성별
+    private int teacherAge; // teacher 나이
 
     public Teacher() {
     }

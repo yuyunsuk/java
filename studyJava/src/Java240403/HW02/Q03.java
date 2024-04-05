@@ -1,8 +1,6 @@
 package Java240403.HW02;
 
-import java.util.LinkedHashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class Q03 {
     public static void main(String[] args) {
@@ -18,7 +16,10 @@ public class Q03 {
             inputLHSet.add(sc.next());
             //inputHSet.add(sc.next());
         }
-        System.out.println(inputLHSet); // 중복제외 입력 순서대로 출력
-        //System.out.println(inputHSet); // 중복제외 순서 상관없이 출력
+        System.out.println(inputLHSet.toString()); // 중복제외 입력 순서대로 출력
+        //System.out.println(inputHSet.toString()); // 중복제외 순서 상관없이 출력
+
+
+
     }
 }
