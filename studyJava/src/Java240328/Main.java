@@ -138,8 +138,19 @@ class LMSSearch {
         return lectureTitle;
     }
 
-    public boolean replaceFreeBoard(String freeBoardID, List<Reply> replies) {
+    public boolean addRepliesFreeBoard(String freeBoardID, List<Reply> replies) {
         boolean checkData = false;
+
+        for (int i=0; i<Main.freeboardArrayList.size(); i++) {
+            if (Main.freeboardArrayList.get(i).getFreeBoardId().equals(freeBoardID)) {
+//                freeBoardTitle = Main.freeboardArrayList.get(i).getFreeBoardTitle();
+//                freeBoardContent = Main.freeboardArrayList.get(i).getFreeBoardContent();
+//                loginId = Main.freeboardArrayList.get(i).getLoginId();
+                //Main.freeboardArrayList.set(i, new FreeBoard(freeBoardId,freeBoardTitle,freeBoardContent,loginId,replies1));
+                Main.freeboardArrayList.get(i).setReplies(replies); // freeBoard 에 오버로딩한 새터(setReplies)에 replies 생성 객체 추가
+                checkData = true;
+            }
+        }
 
         return checkData;
     }
@@ -292,21 +303,22 @@ public class Main {
         String loginId = "";
 
         Reply reply1 = new Reply("RP24040001","게시판01의 Reply01", "24030002", freeBoardId);
-        List<Reply> replies1 = new ArrayList<>();
-        replies1.add(reply1);
-        for (int i=0; i<Main.freeboardArrayList.size(); i++) {
-            if (Main.freeboardArrayList.get(i).getFreeBoardId().equals(freeBoardId)) {
-                freeBoardTitle = Main.freeboardArrayList.get(i).getFreeBoardTitle();
-                freeBoardContent = Main.freeboardArrayList.get(i).getFreeBoardContent();
-                loginId = Main.freeboardArrayList.get(i).getLoginId();
-
-                Main.freeboardArrayList.set(i, new FreeBoard(freeBoardId,freeBoardTitle,freeBoardContent,loginId,replies1));
-            }
-        }
-
         Reply reply2 = new Reply("RP24040002","게시판01의 Reply02", "24030003", freeBoardId);
         Reply reply3 = new Reply("RP24040003","게시판01의 Reply03", "24030004", freeBoardId);
         Reply reply4 = new Reply("RP24040004","게시판01의 Reply04", "24030005", freeBoardId);
+        List<Reply> replies = new ArrayList<>();
+        replies.add(reply1);
+        replies.add(reply2);
+        replies.add(reply3);
+        replies.add(reply4);
+
+        boolean checkReplies = false;
+        checkReplies = lmsS1.addRepliesFreeBoard(freeBoardId, replies);
+        if (checkReplies) {
+            System.out.println("댓글이 입력 되었습니다.");
+        } else {
+            System.out.println("댓글을 입력할 freeBoard 를 발견하지 못하였습니다.");
+        }
 
 
 

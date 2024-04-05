@@ -27,7 +27,7 @@ public class Q4 {
         int count = 0; // 시도횟수를 세기위한 변수
 
         Scanner sc = new Scanner(System.in);
-        do {
+        do { // 무조건 한번 실행
             input = sc.nextInt(); // 사용자입력 저장
             count++; // 시도횟수 카운트
 
